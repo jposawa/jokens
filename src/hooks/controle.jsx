@@ -60,12 +60,8 @@ export const ControleProvider = ({children}) => {
         a = parseInt(a);
         b = parseInt(b);
 
-        console.log(a,b);
-
         return a-b;
       });
-
-      console.log(resultados);
 
       if(parseInt(resultados[0]) === parseInt(resultados[1])){
         return "Empate";
@@ -93,11 +89,7 @@ export const ControleProvider = ({children}) => {
       resultados.push(`${numeroJogador}|Jogador`);
       resultados.push(`${jogadaComputador(totalPossibilidades)}|Computador`);
 
-      console.log(resultados);
-
       vencedor = comparaResultados(resultados);
-
-      console.log(vencedor);
 
       if(vencedor === "Jogador"){
         _mensagem = "Você venceu dessa vez";
