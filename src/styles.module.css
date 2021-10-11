@@ -1,0 +1,71 @@
+.slotPagina{
+  width:100vw;
+  height:100vh;
+  display:flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+}
+
+.frameJogo{
+  width: 100%;
+  height:100%;
+  padding: 0.2% 0.5%;
+  display:flex;
+  flex-direction: column;
+}
+
+.navegacao{
+  width:100%;
+  height:10%;
+  bottom:0;
+  left:0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size:16pt;
+  background:#dedede;
+  box-shadow:0 0 0.2rem rgba(0,0,0,0.3);
+}
+
+.itemNavegacao{
+  --corBordaNavegacao: #369;
+
+  width:100% !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 0 solid var(--corBordaNavegacao);
+}
+
+.itemNavegacao:hover{
+  /* box-shadow: 0 0 20rem rgba(0,0,0,0.6) inset; */
+  text-decoration: underline;
+  border-bottom-width: 0.4rem;
+}
+
+.itemNavegacao>p{
+  font-size:12pt !important;
+}
+
+@media screen and (min-width: 700px) {
+  .slotPagina{
+    flex-direction: row;
+  }
+
+  .navegacao{
+    width:7vw;
+    height:100%;
+  }
+
+  .itemNavegacao{
+    border-bottom:none;
+    border-left: 0 solid var(--corBordaNavegacao);
+  }
+
+  .itemNavegacao:hover{
+    text-decoration: underline;
+    border-left-width: 0.4rem;
+    border-bottom-width: 0;
+  }
+}
