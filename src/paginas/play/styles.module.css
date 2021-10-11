@@ -1,0 +1,14 @@
+.slotJogo{
+  height:100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.slotMensagem{
+  height:20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -5,7 +5,8 @@ import reactRefresh from '@vitejs/plugin-react-refresh'
  * @type { import('vite').UserConfig }
  */
 export default {
-  plugins: [reactRefresh()],
+  // plugins: [reactRefresh()],
+  plugins:[],
   server: {
     host: '0.0.0.0',
     hmr: {
